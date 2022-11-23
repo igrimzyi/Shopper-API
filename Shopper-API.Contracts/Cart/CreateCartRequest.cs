@@ -1,9 +1,9 @@
-namespace Shopper-API.Contracts.Cart
+namespace ShopperAPI.Contracts.Cart;
 
     public record CreateCartRequest(
     
         string CustomerId,
         string CartId,
-        List<string> ProductIds
-        
-    )
+        List<string> Shoe
+
+    );
