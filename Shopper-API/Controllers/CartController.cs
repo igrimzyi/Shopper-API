@@ -25,7 +25,11 @@ public class CartController : ControllerBase
             Cart.Shoe
         );
 
-        return Ok(request);
+        return CreatedAtAction(
+            actionName: nameof(GetCart),
+            routeValues: new { id = Cart.Id },
+            value: response
+        );
     }
 
     [HttpGet("{id:guid}")]
