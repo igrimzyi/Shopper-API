@@ -30,6 +30,7 @@ public class CartController : ControllerBase
             routeValues: new { id = Cart.Id },
             value: response
         );
+        //return Ok(response);
     }
 
     [HttpGet("{id:guid}")]
